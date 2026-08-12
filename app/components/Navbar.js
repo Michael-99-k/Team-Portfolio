@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
-import { Home, LogIn, UserPlus, Moon, Sun, Menu, X ,Info  } from "lucide-react";
+import { Home, LogIn, UserPlus, Moon, Sun, Menu, X ,Info,RssIcon,ShieldHalfIcon,CardSimIcon  } from "lucide-react";
 import { useState } from "react";
+import ThemeProvider from "./ThemeProvider";
 
 
 export default function Navbar() {
@@ -15,9 +16,11 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home", icon: Home },
     { href: "/about", label: "About", icon: Info },
-    { href: "/contact", label: "Contact", icon: UserPlus },
-    { href: "/team", label: "Team", icon: UserPlus },
-    { href: "/blog", label: "Signup", icon: UserPlus },
+    { href: "/contact", label: "Contact", icon: CardSimIcon },
+    { href: "/team", label: "Team", icon: ShieldHalfIcon },
+    { href: "/blog", label: "Blog", icon: RssIcon },
+    
+    
   ];
 
   const isActive = (path) => pathname === path;
