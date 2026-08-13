@@ -1,8 +1,28 @@
-const metrics = [
-  { label: "Active projects", value: "12" },
-  { label: "Team capacity", value: "87%" },
-  { label: "Feedback loop", value: "4.9/5" },
-];
+"use client";
+
+import Link from "next/link"; 
+import {
+  ArrowUpRight,
+  Briefcase,
+  Clock,
+  FolderGit2,
+  Layers,
+  Server,
+  FileText,
+  Sparkles,
+  Users,
+} from "lucide-react";
+
+const teamStats = {
+  tagline:
+    "We are a cross-functional team designing and building modern, performant web applications.",
+  stats: [
+    { label: "Team Members", value: 3, icon: Users },
+    { label: "Projects Shipped", value: 9, icon: FolderGit2 },
+    { label: "Years Experience", value: 4, icon: Briefcase },
+    { label: "Uptime", value: "99.9%", icon: Clock },
+  ],
+};
 
 const tasks = [
   "Finalize the onboarding flow",
@@ -51,7 +71,21 @@ export default function DashboardPage() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
+
+        {/* PROJECTS */}
+        <section>
+          <div className="flex items-end justify-between">
+            <div>
+              <h2 className="text-xl font-semibold text-zinc-900 dark:text-white">Projects</h2>
+              <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+                Selected work and experiments.
+              </p>
+            </div>
+            <Link href="/team page" className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 sm:block dark:text-indigo-400">
+              View team
+            </Link>
+          </div>
 
         <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Today&apos;s priorities</h2>
