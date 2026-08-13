@@ -147,42 +147,14 @@ function GraphBackground() {
   );
 }
 
-function Navbar() {
-  const links = ["Home", "About", "Team", "Blog", "Contact"];
-  return (
-    <nav className="relative z-20 flex items-center justify-between px-6 sm:px-10 py-6 max-w-7xl mx-auto">
-      <div className="flex items-center gap-2 text-white font-bold text-lg">
-        <Code2 className="w-5 h-5 text-[#27E6EC]" />
-        DevCrew
-      </div>
-      <div className="hidden md:flex items-center gap-2 text-sm">
-        {links.map((link) => (
-          <a
-            key={link}
-            href="#"
-            className={`px-4 py-2 rounded-full transition-colors ${
-              link === "Team"
-                ? "border border-[#27E6EC]/40 text-[#27E6EC] bg-[#27E6EC]/10"
-                : "text-[#9BA8AB] hover:text-white"
-            }`}
-          >
-            {link}
-          </a>
-        ))}
-      </div>
-    </nav>
-  );
-}
-
 export default function TeamPage() {
   return (
     <div className="min-h-screen bg-[#0d1b26]">
       {/* Hero */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#0d1b26] via-[#1A334A] to-[#1E536E]">
         <GraphBackground />
-        <Navbar />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 pt-8 pb-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 pt-16 pb-32">
           <p className="text-[#27E6EC] text-xs font-semibold tracking-[0.2em] mb-4">
             WHO WE ARE
           </p>
@@ -317,9 +289,9 @@ export default function TeamPage() {
       {/* Quote */}
       <div className="text-center pb-20 px-6">
         <p className="italic text-[#9BA8AB]">
-          "FIND YOUR DREAM COME TRUE."
+          "Alone we can do so little; together we can do so much."
         </p>
-        <p className="mt-2 text-sm text-[#5AA5CD]">— KANYE WEST</p>
+        <p className="mt-2 text-sm text-[#5AA5CD]">— Helen Keller</p>
       </div>
     </div>
   );
