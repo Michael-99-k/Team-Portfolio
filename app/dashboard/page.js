@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link"; 
+import Link from "next/link";
 import {
   Activity,
   ArrowUpRight,
@@ -20,9 +20,9 @@ const teamStats = {
   tagline:
     "We are a cross-functional team designing and building modern, performant web applications.",
   stats: [
-    { label: "Team Members", value: 42, icon: Users },
-    { label: "Projects Shipped", value: 128, icon: FolderGit2 },
-    { label: "Years Experience", value: 8, icon: Briefcase },
+    { label: "Team Members", value: 3, icon: Users },
+    { label: "Projects Shipped", value: 5, icon: FolderGit2 },
+    { label: "Years Experience", value: 4, icon: Briefcase },
     { label: "Uptime", value: "99.9%", icon: Clock },
   ],
 };
