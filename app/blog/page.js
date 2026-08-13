@@ -1,3 +1,4 @@
+
 const posts = [
   {
     title: "Product strategy for small teams",
@@ -40,6 +41,7 @@ export default function BlogPage() {
           </article>
         ))}
       </div>
+
     </div>
   );
 }

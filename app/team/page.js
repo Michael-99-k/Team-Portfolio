@@ -1,8 +1,5 @@
-"use client";
 
-import { useEffect, useRef } from "react";
-
-const team = [
+const members = [
   {
     name: "Aurelia.M",
     initials: "A",
@@ -157,6 +154,7 @@ export default function TeamPage() {
           ))}
         </div>
       </div>
+
     </div>
   );
 }
