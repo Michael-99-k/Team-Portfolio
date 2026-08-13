@@ -36,7 +36,7 @@ export default function ContactPage() {
             Get in touch
           </p>
           <h1 className="mt-4 text-5xl font-black tracking-tight text-slate-900 dark:text-white sm:text-6xl">
-            Let's work together
+            {"Let's work together"}
           </h1>
         </div>
 
@@ -99,7 +99,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Message sent!</h3>
                 <p className="mt-2 text-center text-slate-600 dark:text-slate-400">
-                  Thanks for reaching out. We'll get back to you soon.
+                  {"Thanks for reaching out. We'll get back to you soon."}
                 </p>
               </div>
             ) : (
