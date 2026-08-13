@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 import { Home, LogIn, UserPlus, Moon, Sun, Menu, X ,Info,RssIcon,ShieldHalfIcon,CardSimIcon  } from "lucide-react";
 import { useState } from "react";
-import ThemeProvider from "./ThemeProvider";
 
 
 export default function Navbar() {
@@ -14,7 +13,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: "Home", icon: Home },
+    { href: "/", label: "Dashboard", icon: Home },
     { href: "/about", label: "About", icon: Info },
     { href: "/contact", label: "Contact", icon: CardSimIcon },
     { href: "/team", label: "Team", icon: ShieldHalfIcon },
@@ -35,7 +34,7 @@ export default function Navbar() {
               <span className="text-white font-bold text-lg">N</span>
             </div>
             <span className="font-bold text-xl text-gray-900 dark:text-white">
-              NextApp
+              TeamPortfolio
             </span>
           </Link>
 
