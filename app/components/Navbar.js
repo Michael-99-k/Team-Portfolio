@@ -42,7 +42,7 @@ export default function Navbar() {
               N
             </div>
             <span className="text-xl font-bold text-slate-900 dark:text-white">
-              NextApp
+              TeamPortfolio
             </span>
           </Link>
 
