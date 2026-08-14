@@ -99,15 +99,15 @@ body {
 /* Tech grid background */
 .tech-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 .dark .tech-grid {
   background-image:
-    linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
 }
 
 /* Glassmorphism utility */
@@ -115,13 +115,13 @@ body {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 8px 32px rgba(79, 70, 229, 0.08);
 }
 
 .dark .glass-card {
   background: rgba(13, 13, 20, 0.7);
-  border: 1px solid rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
@@ -138,9 +138,9 @@ body {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(56, 189, 248, 0.5),
-    rgba(139, 92, 246, 0.5),
-    rgba(236, 72, 153, 0.5)
+    rgba(99, 102, 241, 0.5),
+    rgba(16, 185, 129, 0.5),
+    rgba(245, 158, 11, 0.5)
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
